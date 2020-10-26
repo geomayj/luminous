@@ -1,0 +1,43 @@
+/* Format for applying styling rules */
+[selector] {
+  [property]: [value];
+}
+
+/* Global Styles go here */
+body {
+  background: black;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+.gm-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gm-welcome-container {
+  width: 65%;
+  position: relative;
+  overflow: hidden;
+}
+
+.gm-welcome-image {
+  width: 100%;
+}
+
+.gm-welcome-container:hover .gm-welcome-image--multi {
+  opacity: 1;
+}
+
+.gm-welcome-image--multi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
